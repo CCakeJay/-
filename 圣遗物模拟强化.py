@@ -33,13 +33,13 @@ shengmingzhi_jisuan = 0
 totalEnhanceTimes = 5
 
 
-artifact_parts = ['èŠ±','ç¾½æ¯›','æ²™æ¼','æ¯å­','å¸½å­']
-hua_main = ['ç”Ÿå‘½å€¼']
-yumao_main = 'æ”»å‡»åŠ›'
-shalou_main = ['æ”»å‡»åŠ›ç™¾åˆ†æ¯”','é˜²å¾¡ç™¾åˆ†æ¯”','ç”Ÿå‘½ç™¾åˆ†æ¯”','å…ƒç´ å……èƒ½æ•ˆç‡','å…ƒç´ ç²¾é€š']
-beizi_main = ['æ”»å‡»åŠ›ç™¾åˆ†æ¯”','é˜²å¾¡ç™¾åˆ†æ¯”','ç”Ÿå‘½ç™¾åˆ†æ¯”','å†°å±æ€§ä¼¤å®³','ç«å±æ€§ä¼¤å®³','æ°´å±æ€§ä¼¤å®³','å²©å±æ€§ä¼¤å®³','é›·å±æ€§ä¼¤å®³','é£å±æ€§ä¼¤å®³','å…ƒç´ ç²¾é€š']
-maozi_main = ['æ”»å‡»åŠ›ç™¾åˆ†æ¯”','é˜²å¾¡ç™¾åˆ†æ¯”','ç”Ÿå‘½ç™¾åˆ†æ¯”','æš´å‡»ä¼¤å®³','æš´å‡»ç‡','å…ƒç´ ç²¾é€š']
-fucitiao = ['æš´å‡»ç‡','ç”Ÿå‘½ç™¾åˆ†æ¯”','æ”»å‡»åŠ›ç™¾åˆ†æ¯”','å…ƒç´ å……èƒ½æ•ˆç‡','é˜²å¾¡ç™¾åˆ†æ¯”','æš´å‡»ä¼¤å®³','æ”»å‡»åŠ›','é˜²å¾¡åŠ›','å…ƒç´ ç²¾é€š','ç”Ÿå‘½å€¼']
+artifact_parts = ['èŠ?','ç¾½æ¯›','æ²™æ¼','æ?å­?','å¸½å­']
+hua_main = ['ç”Ÿå‘½å€?']
+yumao_main = 'æ”»å‡»åŠ?'
+shalou_main = ['æ”»å‡»åŠ›ç™¾åˆ†æ¯”','é˜²å¾¡ç™¾åˆ†æ¯?','ç”Ÿå‘½ç™¾åˆ†æ¯?','å…ƒç´ å……èƒ½æ•ˆç‡','å…ƒç´ ç²¾é€?']
+beizi_main = ['æ”»å‡»åŠ›ç™¾åˆ†æ¯”','é˜²å¾¡ç™¾åˆ†æ¯?','ç”Ÿå‘½ç™¾åˆ†æ¯?','å†°å±æ€§ä¼¤å®?','ç?å±æ€§ä¼¤å®?','æ°´å±æ€§ä¼¤å®?','å²©å±æ€§ä¼¤å®?','é›·å±æ€§ä¼¤å®?','é£å±æ€§ä¼¤å®?','å…ƒç´ ç²¾é€?']
+maozi_main = ['æ”»å‡»åŠ›ç™¾åˆ†æ¯”','é˜²å¾¡ç™¾åˆ†æ¯?','ç”Ÿå‘½ç™¾åˆ†æ¯?','æš´å‡»ä¼¤å??','æš´å‡»ç?','å…ƒç´ ç²¾é€?']
+fucitiao = ['æš´å‡»ç?','ç”Ÿå‘½ç™¾åˆ†æ¯?','æ”»å‡»åŠ›ç™¾åˆ†æ¯”','å…ƒç´ å……èƒ½æ•ˆç‡','é˜²å¾¡ç™¾åˆ†æ¯?','æš´å‡»ä¼¤å??','æ”»å‡»åŠ?','é˜²å¾¡åŠ?','å…ƒç´ ç²¾é€?','ç”Ÿå‘½å€?']
 baojilvbaifenbi = [2.7,3.1,3.5,3.9]
 shengmingbaifenbi = [4.1,4.7,5.3,5.8]
 gongjilibaifenbi = [4.1,4.7,5.3,5.8]
@@ -62,25 +62,25 @@ def pick_a_artifact():
 
 def fucitiao_shuzhi(fucitiao,fucitiao_shuzhi):
 	global baojilvbaifenbi_jisuan,shengmingbaifenbi_jisuan,gongjilibaifenbi_jisuan,yuanshuchongnengbaifenbi_jisuan,fangyulibaifenbi_jisuan,baojishanghaibaifenbi_jisuan,gongjil_jisuan,fangyuli_jisuan,yuanshujingtong_jisuan,shengmingzhi_jisuan
-	if fucitiao == 'æš´å‡»ç‡':
+	if fucitiao == 'æš´å‡»ç?':
 		fucitiao_shuzhi += random.choice(baojilvbaifenbi)
-	elif fucitiao == 'ç”Ÿå‘½ç™¾åˆ†æ¯”':
+	elif fucitiao == 'ç”Ÿå‘½ç™¾åˆ†æ¯?':
 		fucitiao_shuzhi += random.choice(shengmingbaifenbi)
 	elif fucitiao == 'æ”»å‡»åŠ›ç™¾åˆ†æ¯”':
 		fucitiao_shuzhi += random.choice(gongjilibaifenbi)
 	elif fucitiao == 'å…ƒç´ å……èƒ½æ•ˆç‡':
 		fucitiao_shuzhi += random.choice(yuanshuchongnengbaifenbi)
-	elif fucitiao == 'å…ƒç´ ç²¾é€š':
+	elif fucitiao == 'å…ƒç´ ç²¾é€?':
 		fucitiao_shuzhi += random.choice(yuanshujingtong)
-	elif fucitiao == 'é˜²å¾¡ç™¾åˆ†æ¯”':
+	elif fucitiao == 'é˜²å¾¡ç™¾åˆ†æ¯?':
 		fucitiao_shuzhi += random.choice(fangyulibaifenbi)
-	elif fucitiao == 'æš´å‡»ä¼¤å®³':
+	elif fucitiao == 'æš´å‡»ä¼¤å??':
 		fucitiao_shuzhi += random.choice(baojishanghaibaifenbi)
-	elif fucitiao == 'æ”»å‡»åŠ›':
+	elif fucitiao == 'æ”»å‡»åŠ?':
 		fucitiao_shuzhi += random.choice(gongjil)
-	elif fucitiao == 'é˜²å¾¡åŠ›':
+	elif fucitiao == 'é˜²å¾¡åŠ?':
 		fucitiao_shuzhi += random.choice(fangyuli)
-	elif fucitiao == 'ç”Ÿå‘½å€¼':
+	elif fucitiao == 'ç”Ÿå‘½å€?':
 		fucitiao_shuzhi += random.choice(shengmingzhi)
 	return fucitiao_shuzhi
 	
@@ -108,28 +108,28 @@ def makeFucitiao(zhucitiao):
 
 
 
-#è·å¾—ä¸€ä¸ªåœ£é—ç‰©
+#è·å¾—ä¸€ä¸?åœ£é—ç‰?
 pick_a_artifact()
-print("ä½ è·å¾—äº†è¿™ä¸ªåœ£é—ç‰©: ")
-print("åœ£é—ç‰©éƒ¨ä½:" + artifact_part)
+print("ä½ è·å¾—äº†è¿™ä¸ªåœ£é—ç‰?: ")
+print("åœ£é—ç‰©éƒ¨ä½?:" + artifact_part)
 if(artifact_part == artifact_parts[0]):
-	print("ä¸»è¯æ¡: " + hua)
+	print("ä¸»è¯æ?: " + hua)
 	makeFucitiao(hua)
 elif(artifact_part == artifact_parts[1]):
-	print("ä¸»è¯æ¡: " + yumao)
+	print("ä¸»è¯æ?: " + yumao)
 	makeFucitiao(yumao)
 elif(artifact_part == artifact_parts[2]):
-	print("ä¸»è¯æ¡: " + shalou)
+	print("ä¸»è¯æ?: " + shalou)
 	makeFucitiao(shalou)
 elif(artifact_part == artifact_parts[3]):
-	print("ä¸»è¯æ¡: " + beizi)
+	print("ä¸»è¯æ?: " + beizi)
 	makeFucitiao(beizi)
 elif(artifact_part == artifact_parts[4]):
-	print("ä¸»è¯æ¡: " + maozi)
+	print("ä¸»è¯æ?: " + maozi)
 	makeFucitiao(maozi)
 
 #å¼€å§‹ç”Ÿæˆå‰¯è¯æ¡
-print("å‰¯è¯æ¡: ")
+print("å‰?è¯æ¡: ")
 #è¾“å‡ºfucitiao1ï¼Œfucitiao2ï¼Œfucitiao3ï¼Œfucitiao4
 print('1. '+ str(fucitiao1) + ' ' + str(fucitiao1_shuzhi))
 print('2. '+ str(fucitiao2) + ' ' + str(fucitiao2_shuzhi))
@@ -138,7 +138,7 @@ print('4. '+ str(fucitiao4) + ' ' + str(fucitiao4_shuzhi))
 
 
 
-a = int(input("ä½ è¦ç»§ç»­å¼ºåŒ–å®Œçš„åœ£é—ç‰©çš„å—: "))
+a = int(input("ä½ è?ç»§ç»?å¼ºåŒ–å®Œçš„åœ£é—ç‰©çš„å?: "))
 if a == 1:
 	while c <= 5:
 		temp = random.choice([1,2,3,4])
@@ -160,3 +160,39 @@ if a == 1:
 		print('4. '+ str(fucitiao4) + ' ' + str("%.1f" %fucitiao4_shuzhi))
 		sleep(1)
 		c += 1
+"""
+Äã»ñµÃÁËÕâ¸öÊ¥ÒÅÎï: 
+Ê¥ÒÅÎï²¿Î»:»¨
+Ö÷´ÊÌõ: ÉúÃüÖµ
+¸±´ÊÌõ:
+1. ±©»÷ÉËº¦ 7.0
+2. ¹¥»÷Á¦ 18
+3. ±©»÷ÂÊ 2.7
+4. ¹¥»÷Á¦°Ù·Ö±È 5.3
+ÄãÒª¼ÌĞøÇ¿»¯ÍêµÄÊ¥ÒÅÎïµÄÂğ: 1
+Ê¥ÒÅÎï¸±´ÊÌõ****************±©»÷ÉËº¦
+1. ±©»÷ÉËº¦ 12.4
+2. ¹¥»÷Á¦ 18.0
+3. ±©»÷ÂÊ 2.7
+4. ¹¥»÷Á¦°Ù·Ö±È 5.3
+Ê¥ÒÅÎï¸±´ÊÌõ****************¹¥»÷Á¦
+1. ±©»÷ÉËº¦ 12.4
+2. ¹¥»÷Á¦ 32.0
+3. ±©»÷ÂÊ 2.7
+4. ¹¥»÷Á¦°Ù·Ö±È 5.3
+Ê¥ÒÅÎï¸±´ÊÌõ****************¹¥»÷Á¦
+1. ±©»÷ÉËº¦ 12.4
+2. ¹¥»÷Á¦ 50.0
+3. ±©»÷ÂÊ 2.7
+4. ¹¥»÷Á¦°Ù·Ö±È 5.3
+Ê¥ÒÅÎï¸±´ÊÌõ****************¹¥»÷Á¦
+1. ±©»÷ÉËº¦ 12.4
+2. ¹¥»÷Á¦ 64.0
+3. ±©»÷ÂÊ 2.7
+4. ¹¥»÷Á¦°Ù·Ö±È 5.3
+Ê¥ÒÅÎï¸±´ÊÌõ****************¹¥»÷Á¦°Ù·Ö±È
+1. ±©»÷ÉËº¦ 12.4
+2. ¹¥»÷Á¦ 64.0
+3. ±©»÷ÂÊ 2.7
+4. ¹¥»÷Á¦°Ù·Ö±È 11.1
+"""
